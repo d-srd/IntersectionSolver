@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023705E67F782EF70603E5BE /* Pods_Intersections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823E3947ECF9BE17DEFDC458 /* Pods_Intersections.framework */; };
 		84123EAE20979FA300F5639E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84123EAD20979FA300F5639E /* AppDelegate.swift */; };
 		84123EB020979FA300F5639E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84123EAF20979FA300F5639E /* ViewController.swift */; };
 		84123EB320979FA300F5639E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84123EB120979FA300F5639E /* Main.storyboard */; };
 		84123EB520979FA600F5639E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84123EB420979FA600F5639E /* Assets.xcassets */; };
 		84123EB820979FA600F5639E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84123EB620979FA600F5639E /* LaunchScreen.storyboard */; };
 		84123EC320979FA700F5639E /* IntersectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84123EC220979FA700F5639E /* IntersectionsTests.swift */; };
+		84123ECE2097B08700F5639E /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84123ECD2097B08700F5639E /* Intersection.swift */; };
+		84A8AD6D209AEA38009582AE /* TrafficSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8AD6C209AEA38009582AE /* TrafficSigns.swift */; };
+		84A8AD6F209B0F51009582AE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8AD6E209B0F51009582AE /* Colors.swift */; };
+		EBC1C04CEDCB8B690E3780C4 /* Pods_IntersectionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF3BCA16DD9415C5D758D33 /* Pods_IntersectionsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		465DD8BD6E6DFD9BC323F74D /* Pods-Intersections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intersections.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Intersections/Pods-Intersections.debug.xcconfig"; sourceTree = "<group>"; };
+		823E3947ECF9BE17DEFDC458 /* Pods_Intersections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intersections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84123EAA20979FA300F5639E /* Intersections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intersections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84123EAD20979FA300F5639E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84123EAF20979FA300F5639E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,13 @@
 		84123EBE20979FA700F5639E /* IntersectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntersectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84123EC220979FA700F5639E /* IntersectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionsTests.swift; sourceTree = "<group>"; };
 		84123EC420979FA700F5639E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84123ECD2097B08700F5639E /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
+		84A8AD6C209AEA38009582AE /* TrafficSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficSigns.swift; sourceTree = "<group>"; };
+		84A8AD6E209B0F51009582AE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B7566851E627799178FCAFF0 /* Pods-IntersectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntersectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntersectionsTests/Pods-IntersectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEDAAB86155D8B67AF78AED3 /* Pods-Intersections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intersections.release.xcconfig"; path = "Pods/Target Support Files/Pods-Intersections/Pods-Intersections.release.xcconfig"; sourceTree = "<group>"; };
+		C6860B579A98D7BDC21DD96F /* Pods-IntersectionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntersectionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntersectionsTests/Pods-IntersectionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFF3BCA16DD9415C5D758D33 /* Pods_IntersectionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntersectionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023705E67F782EF70603E5BE /* Pods_Intersections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC1C04CEDCB8B690E3780C4 /* Pods_IntersectionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8328A04198C5625EA162F300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				465DD8BD6E6DFD9BC323F74D /* Pods-Intersections.debug.xcconfig */,
+				BEDAAB86155D8B67AF78AED3 /* Pods-Intersections.release.xcconfig */,
+				B7566851E627799178FCAFF0 /* Pods-IntersectionsTests.debug.xcconfig */,
+				C6860B579A98D7BDC21DD96F /* Pods-IntersectionsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84123EA120979FA300F5639E = {
 			isa = PBXGroup;
 			children = (
 				84123EAC20979FA300F5639E /* Intersections */,
 				84123EC120979FA700F5639E /* IntersectionsTests */,
 				84123EAB20979FA300F5639E /* Products */,
+				8328A04198C5625EA162F300 /* Pods */,
+				AD69D490641193973449A23A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +106,11 @@
 		84123EAC20979FA300F5639E /* Intersections */ = {
 			isa = PBXGroup;
 			children = (
+				84A8AD6C209AEA38009582AE /* TrafficSigns.swift */,
 				84123EAD20979FA300F5639E /* AppDelegate.swift */,
 				84123EAF20979FA300F5639E /* ViewController.swift */,
+				84123ECD2097B08700F5639E /* Intersection.swift */,
+				84A8AD6E209B0F51009582AE /* Colors.swift */,
 				84123EB120979FA300F5639E /* Main.storyboard */,
 				84123EB420979FA600F5639E /* Assets.xcassets */,
 				84123EB620979FA600F5639E /* LaunchScreen.storyboard */,
@@ -96,6 +128,15 @@
 			path = IntersectionsTests;
 			sourceTree = "<group>";
 		};
+		AD69D490641193973449A23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				823E3947ECF9BE17DEFDC458 /* Pods_Intersections.framework */,
+				FFF3BCA16DD9415C5D758D33 /* Pods_IntersectionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84123EC720979FA700F5639E /* Build configuration list for PBXNativeTarget "Intersections" */;
 			buildPhases = (
+				99B49956CF7F69B1BE93069C /* [CP] Check Pods Manifest.lock */,
 				84123EA620979FA300F5639E /* Sources */,
 				84123EA720979FA300F5639E /* Frameworks */,
 				84123EA820979FA300F5639E /* Resources */,
+				AD623D9038687241886740C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84123ECA20979FA700F5639E /* Build configuration list for PBXNativeTarget "IntersectionsTests" */;
 			buildPhases = (
+				30DFC2A1A4AA778300AD1645 /* [CP] Check Pods Manifest.lock */,
 				84123EBA20979FA700F5639E /* Sources */,
 				84123EBB20979FA700F5639E /* Frameworks */,
 				84123EBC20979FA700F5639E /* Resources */,
@@ -192,11 +236,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30DFC2A1A4AA778300AD1645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntersectionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B49956CF7F69B1BE93069C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intersections-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD623D9038687241886740C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Intersections/Pods-Intersections-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftGraph/SwiftGraph.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGraph.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Intersections/Pods-Intersections-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84123EA620979FA300F5639E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A8AD6D209AEA38009582AE /* TrafficSigns.swift in Sources */,
+				84A8AD6F209B0F51009582AE /* Colors.swift in Sources */,
+				84123ECE2097B08700F5639E /* Intersection.swift in Sources */,
 				84123EB020979FA300F5639E /* ViewController.swift in Sources */,
 				84123EAE20979FA300F5639E /* AppDelegate.swift in Sources */,
 			);
@@ -356,6 +460,7 @@
 		};
 		84123EC820979FA700F5639E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465DD8BD6E6DFD9BC323F74D /* Pods-Intersections.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +479,7 @@
 		};
 		84123EC920979FA700F5639E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDAAB86155D8B67AF78AED3 /* Pods-Intersections.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +498,7 @@
 		};
 		84123ECB20979FA700F5639E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7566851E627799178FCAFF0 /* Pods-IntersectionsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +520,7 @@
 		};
 		84123ECC20979FA700F5639E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6860B579A98D7BDC21DD96F /* Pods-IntersectionsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
