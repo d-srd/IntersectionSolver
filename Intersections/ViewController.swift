@@ -94,6 +94,8 @@ class ViewController: UIViewController {
         //            ˇ     |
         //            D     E
         //
+        // auti su na A -> D, J -> D, E -> I, K -> I
+        //
         
         let intersection = WeightedGraph<String, Int>(vertices: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"])
         
@@ -106,12 +108,21 @@ class ViewController: UIViewController {
         let edges = makeEdges(in: intersection, with: edgePairs)
         edges[6].weight = 3
         edges[9].weight = 3
-        edges.forEach { intersection.addEdge($0) }
-        graphCost(intersection, from: "K", to: "G")
+        for edge in edges { intersection.addEdge(edge) }
+        
+        let car0 = getCost(in: intersection, from: "A", to: "D")
+        let car1 = getCost(in: intersection, from: "J", to: "D")
+        let car2 = getCost(in: intersection, from: "E", to: "I")
+        let car3 = getCost(in: intersection, from: "K", to: "I")
+        print("car costs: ", [car0, car1, car2, car3])
         
         print(intersection)
         
         print("hi there")
+    }
+    
+    func getCost<T>(in graph: WeightedGraph<T, Int>, from source: T, to destination: T) -> Int {
+        return ((graph as Graph).bfs(from: source, to: destination) as! [WeightedEdge<Int>]).reduce(0) { $0 + $1.weight }
     }
     
     func makeEdges(in graph: WeightedGraph<String, Int>, with indices: [(String, String)]) -> [WeightedEdge<Int>] {
@@ -121,10 +132,6 @@ class ViewController: UIViewController {
                               directed: true,
                               weight: 1)
         }
-    }
-    
-    func graphCost(_ graph: WeightedGraph<String, Int>, from source: String, to destination: String) {
-        print(graph.edgeExists(from: source, to: destination))
     }
 
     override func didReceiveMemoryWarning() {
