@@ -126,7 +126,7 @@ class YieldSignView: UIView {
 }
 
 @IBDesignable
-class RightOfWaySign: UIView {
+class RightOfWaySignView: UIView {
     @IBInspectable
     var size: CGSize = CGSize(width: 30, height: 30)
     

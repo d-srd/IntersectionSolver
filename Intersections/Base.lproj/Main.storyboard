@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,194 +15,545 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Intersections" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ddi-UQ-KBW">
-                                <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                                <rect key="frame" x="0.0" y="86" width="414" height="650"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-Nr-3F9" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="113" y="0.0" width="70" height="581"/>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-Nr-3F9" userLabel="RoadSegmentTopLeftToMiddleTopLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="137" y="0.0" width="70" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LKX-jI-olr" customClass="CarView" customModule="Intersections" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="446" width="48" height="111"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="3.1415899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="how-Dd-bn3" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="191" y="0.0" width="70" height="581"/>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cM-yd-8XH" userLabel="RoadSegmentTopLeftToMiddleBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="-1" width="70" height="384"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="3.1415899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-dr-fcZ" userLabel="RoadSegmentTopLeftToBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="137" y="-1" width="70" height="651"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBi-ae-kqr" customClass="CarView" customModule="Intersections" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="421" width="48" height="111"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-hf-XvX">
+                                                <rect key="frame" x="-4" y="215" width="79" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
+                                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXp-Xa-DzP"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="3.1415899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="120"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="how-Dd-bn3" userLabel="RoadSegmentBottomRightToMiddleBottomRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="208" y="326" width="70" height="332"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J79-Ub-cL3" userLabel="RoadSegmentBottomRightToMiddleTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="209" y="268" width="70" height="387"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cv6-ie-nxk" userLabel="RoadSegmentBottomRightToTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="209" y="0.0" width="70" height="656"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-cw-BJ2">
+                                                <rect key="frame" x="-4" y="385" width="79" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdk-FL-e9e"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="-100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJK-6i-kzD" userLabel="RoadSegmentRightTopToMiddleTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="209" y="268" width="205" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="-1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-4O-I4V" userLabel="RoadSegmentRightTopToMiddleTopLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="268" width="274" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="-1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="50" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-4d-XOo" userLabel="RoadSegmentRightTopToLeftTop" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="268" width="414" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ox-WT-Cix">
+                                                <rect key="frame" x="279" y="0.0" width="79" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsR-vq-7V0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="-1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="-100" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EnX-xF-kaM" userLabel="RoadSegmentLeftBottomToMiddleBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="326" width="208" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GaT-hw-Mdr" userLabel="RoadSegmentLeftBottomToMiddleBottomRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="324" width="278" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="-20" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="le2-yq-n25" userLabel="RoadSegmentLeftBottomToRightBottom" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="-1" y="326" width="415" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4H-Br-OpY">
+                                                <rect key="frame" x="52" y="0.0" width="79" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWg-tD-cwG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="1.5707899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="100" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-dg-xcY" userLabel="BottomRight">
+                                        <rect key="frame" x="222" y="580" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EQE-4D-jJe" appends="YES" id="EfM-1Y-Zak"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-QX-Vqc" userLabel="BottomLeft">
+                                        <rect key="frame" x="155" y="581" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="r2h-FH-804" appends="YES" id="RF2-cF-JsF"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZw-C1-U8f" userLabel="RightBottom">
+                                        <rect key="frame" x="367" y="338" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="vIT-wB-U0T" appends="YES" id="Y2a-2O-o5u"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-Hf-gtb" userLabel="RightTop">
+                                        <rect key="frame" x="366" y="278" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="TSC-hR-V7o" appends="YES" id="Vvb-gf-oAa"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmH-ME-EhZ" userLabel="TopLeft">
+                                        <rect key="frame" x="154" y="21" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qct-GO-bLb" appends="YES" id="Tgz-2j-NjU"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nq2-Cs-iRr" userLabel="TopRight">
+                                        <rect key="frame" x="222" y="22" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="O8p-YQ-hZI" appends="YES" id="YVi-Ch-d8W"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-gp-plR" userLabel="LeftTop">
+                                        <rect key="frame" x="3" y="274" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Oi5-E3-bOF" appends="YES" id="piu-nn-XnW"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="saN-AX-SgA" userLabel="LeftBottom">
+                                        <rect key="frame" x="3" y="339" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="FSb-Lg-GpW" appends="YES" id="Agj-8s-wHg"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgg-du-787" userLabel="MiddleBottomLeft">
+                                        <rect key="frame" x="154" y="337" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LHJ-8G-zEO" appends="YES" id="yOE-g7-JwP"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-Zp-e3k" userLabel="MiddleTopLeft">
+                                        <rect key="frame" x="154" y="276" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="op5-cx-kl8" appends="YES" id="njS-NJ-vHu"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6X-gb-tPe" userLabel="MiddleBottomRight">
+                                        <rect key="frame" x="222" y="337" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="XKl-Jk-IKp" appends="YES" id="Jzh-7p-9pd"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKk-IV-UW7" userLabel="MiddleTopRight">
+                                        <rect key="frame" x="222" y="277" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="N38-6A-Ufd" appends="YES" id="li3-lZ-xR8"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6P9-3V-STL">
+                                        <rect key="frame" x="286" y="392" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ciz-X9-dG8" appends="YES" id="d4W-rK-zyG"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSv-DW-CEb">
+                                        <rect key="frame" x="286" y="216" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="116-ur-GBP" appends="YES" id="XYM-PD-tG9"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-eh-LM2">
+                                        <rect key="frame" x="85" y="216" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="RV5-vu-8N3" appends="YES" id="POv-3a-Qrp"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FqU-YC-FUS">
+                                        <rect key="frame" x="85" y="392" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="jyS-9b-EIJ" appends="YES" id="mtH-X1-1gr"/>
+                                        </connections>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyL-OJ-1zX" userLabel="RoadSegmentMiddleBottomLeftToBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="137" y="324" width="70" height="329"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="3.1415899999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="120"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEl-xz-lCs" userLabel="RoadSegmentMiddleTopRightToTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
+                                        <rect key="frame" x="210" y="1" width="70" height="325"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
+                                                <size key="value" width="0.0" height="-100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-mg-0XS" customClass="TrafficLightView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="47" y="36" width="47" height="142"/>
+                                        <rect key="frame" x="3" y="447" width="72" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <gestureRecognizers/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRedLightOn" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isYellowLightOn" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isGreenLightOn" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
-                                                <real key="value" value="35"/>
+                                                <real key="value" value="55"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Rfw-LY-cqE" appends="YES" id="MNX-PI-xdd"/>
+                                        </connections>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.40800268607157364" green="0.22734524427209238" blue="0.00084401579341148879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pGh-U7-ktk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pw9-mD-XbR">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StopCell" id="B1x-Jm-8aP" customClass="TrafficSignCollectionViewCell" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSH-Wg-9VR" customClass="StopSignView" customModule="Intersections" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-zb-P7z">
-                                                            <rect key="frame" x="8" y="17" width="34" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
-                                                            <color key="textColor" name="Intrinsically White"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                                            <real key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="qSH-Wg-9VR" firstAttribute="leading" secondItem="B1x-Jm-8aP" secondAttribute="leading" id="Sqd-Db-3Iq"/>
-                                            <constraint firstAttribute="bottom" secondItem="qSH-Wg-9VR" secondAttribute="bottom" id="elT-yW-Tzz"/>
-                                            <constraint firstAttribute="trailing" secondItem="qSH-Wg-9VR" secondAttribute="trailing" id="rTP-AK-h33"/>
-                                            <constraint firstItem="qSH-Wg-9VR" firstAttribute="top" secondItem="B1x-Jm-8aP" secondAttribute="top" id="sP2-vE-ZXX"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InvertedTriangleCell" id="2z4-9O-wlB" customClass="TrafficSignCollectionViewCell" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="65" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-xN-Ojv" customClass="YieldSignView" customModule="Intersections" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                                            <real key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="WbD-xN-Ojv" secondAttribute="bottom" id="SLE-SE-xg7"/>
-                                            <constraint firstItem="WbD-xN-Ojv" firstAttribute="top" secondItem="2z4-9O-wlB" secondAttribute="top" id="T9Z-O4-Tmx"/>
-                                            <constraint firstItem="WbD-xN-Ojv" firstAttribute="leading" secondItem="2z4-9O-wlB" secondAttribute="leading" id="dQh-da-iyF"/>
-                                            <constraint firstAttribute="trailing" secondItem="WbD-xN-Ojv" secondAttribute="trailing" id="rux-1p-E9o"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainRoadCell" id="XN8-8N-F4A" customClass="TrafficSignCollectionViewCell" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-WC-RGW" customClass="RightOfWaySign" customModule="Intersections" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                                            <real key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="IoS-WC-RGW" firstAttribute="leading" secondItem="XN8-8N-F4A" secondAttribute="leading" id="2va-vV-FfO"/>
-                                            <constraint firstItem="IoS-WC-RGW" firstAttribute="top" secondItem="XN8-8N-F4A" secondAttribute="top" id="4HZ-yU-Yfm"/>
-                                            <constraint firstAttribute="bottom" secondItem="IoS-WC-RGW" secondAttribute="bottom" id="SpB-QU-et3"/>
-                                            <constraint firstAttribute="trailing" secondItem="IoS-WC-RGW" secondAttribute="trailing" id="f3U-wP-np1"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrafficLightCell" id="Vyi-QC-Zzd" customClass="TrafficSignCollectionViewCell" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNt-pp-CcN" customClass="TrafficLightView" customModule="Intersections" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="0.0" width="20" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRedLightOn" value="NO"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isYellowLightOn" value="NO"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGreenLightOn" value="NO"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomCarButton" destination="HIh-cw-BJ2" id="fcE-9q-Y1W"/>
+                        <outlet property="bottomLeftGestureContainer" destination="8EO-QX-Vqc" id="pTz-Zx-MIG"/>
+                        <outlet property="bottomLeftRoadSign" destination="FqU-YC-FUS" id="z44-aG-f2j"/>
+                        <outlet property="bottomLeftTap" destination="r2h-FH-804" id="SC3-Ja-A8D"/>
+                        <outlet property="bottomRightGestureContainer" destination="Dey-dg-xcY" id="G3r-hN-KRA"/>
+                        <outlet property="bottomRightRoadSign" destination="6P9-3V-STL" id="Qpq-2s-vBZ"/>
+                        <outlet property="bottomRightTap" destination="EQE-4D-jJe" id="uwk-Sj-H9p"/>
                         <outlet property="grassView" destination="Ddi-UQ-KBW" id="7cD-7U-JiB"/>
+                        <outlet property="leftBottomGestureContainer" destination="saN-AX-SgA" id="NoP-re-t8u"/>
+                        <outlet property="leftBottomTap" destination="FSb-Lg-GpW" id="69s-pS-zVY"/>
+                        <outlet property="leftCarButton" destination="d4H-Br-OpY" id="u72-wE-v5s"/>
+                        <outlet property="leftTopGestureContainer" destination="hHK-gp-plR" id="Qjw-dm-YwU"/>
+                        <outlet property="leftTopTap" destination="Oi5-E3-bOF" id="126-Qn-B5Q"/>
+                        <outlet property="middleBottomLeftGestureContainer" destination="Dgg-du-787" id="X4x-O3-CCE"/>
+                        <outlet property="middleBottomLeftTap" destination="LHJ-8G-zEO" id="QdA-qO-ZGe"/>
+                        <outlet property="middleBottomRightGestureContainer" destination="I6X-gb-tPe" id="Zdo-KU-sZr"/>
+                        <outlet property="middleBottomRightTap" destination="XKl-Jk-IKp" id="vg6-ja-m3w"/>
+                        <outlet property="middleTopLeftGestureContainer" destination="TgA-Zp-e3k" id="XWm-cM-zoL"/>
+                        <outlet property="middleTopLeftTap" destination="op5-cx-kl8" id="7kM-wq-QIU"/>
+                        <outlet property="middleTopRightGestureContainer" destination="yKk-IV-UW7" id="jcB-Tr-W3b"/>
+                        <outlet property="middleTopRightTap" destination="N38-6A-Ufd" id="nLG-o2-r2g"/>
+                        <outlet property="rightBottomGestureContainer" destination="HZw-C1-U8f" id="4bH-Lj-zXh"/>
+                        <outlet property="rightBottomTap" destination="vIT-wB-U0T" id="vDd-Zq-J8i"/>
+                        <outlet property="rightCarButton" destination="5Ox-WT-Cix" id="q4D-x8-2jA"/>
+                        <outlet property="rightTopGestureContainer" destination="lZT-Hf-gtb" id="Kmz-Y3-bPw"/>
+                        <outlet property="rightTopTap" destination="TSC-hR-V7o" id="HfR-c9-HA5"/>
+                        <outlet property="roadSegmentBottomRightToMiddleBottomRight" destination="how-Dd-bn3" id="dTx-2d-7Kp"/>
+                        <outlet property="roadSegmentBottomRightToMiddleTopRight" destination="J79-Ub-cL3" id="zYy-iR-NSu"/>
+                        <outlet property="roadSegmentBottomRightToTopRight" destination="Cv6-ie-nxk" id="VRw-tq-9Qk"/>
+                        <outlet property="roadSegmentLeftBottomToMiddleBottomLeft" destination="EnX-xF-kaM" id="QlP-tL-9AR"/>
+                        <outlet property="roadSegmentLeftBottomToMiddleBottomRight" destination="GaT-hw-Mdr" id="mff-FY-gfB"/>
+                        <outlet property="roadSegmentLeftBottomToRightBottom" destination="le2-yq-n25" id="ofx-Mg-RAb"/>
+                        <outlet property="roadSegmentMiddleBottomLeftToBottomLeft" destination="oyL-OJ-1zX" id="4qK-s7-zpd"/>
+                        <outlet property="roadSegmentMiddleTopRightToTopRight" destination="fEl-xz-lCs" id="3zT-5m-1M7"/>
+                        <outlet property="roadSegmentRightTopToLeftTop" destination="aGj-4d-XOo" id="W4x-vF-5NT"/>
+                        <outlet property="roadSegmentRightTopToMiddleTopLeft" destination="BeL-4O-I4V" id="5Zf-hP-M1w"/>
+                        <outlet property="roadSegmentRightTopToMiddleTopRight" destination="RJK-6i-kzD" id="M9h-GN-KVJ"/>
+                        <outlet property="roadSegmentTopLeftToBottomLeft" destination="Hqr-dr-fcZ" id="Vjd-E3-Xyg"/>
+                        <outlet property="roadSegmentTopLeftToMiddleBottomLeft" destination="8cM-yd-8XH" id="bFz-ra-DZr"/>
+                        <outlet property="roadSegmentTopLeftToMiddleTopLeft" destination="6L1-Nr-3F9" id="EtS-Zn-Hkg"/>
+                        <outlet property="topCarButton" destination="Lgz-hf-XvX" id="ef5-L0-nyy"/>
+                        <outlet property="topLeftGestureContainer" destination="mmH-ME-EhZ" id="v4b-pc-KQc"/>
+                        <outlet property="topLeftRoadSign" destination="aHX-eh-LM2" id="tmv-2o-r50"/>
+                        <outlet property="topLeftTap" destination="qct-GO-bLb" id="PH4-YQ-VmY"/>
+                        <outlet property="topRightGestureContainer" destination="nq2-Cs-iRr" id="nH5-T3-M9G"/>
+                        <outlet property="topRightRoadSign" destination="eSv-DW-CEb" id="kQ4-uF-dn9"/>
+                        <outlet property="topRightTap" destination="O8p-YQ-hZI" id="SZU-BM-Po2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TSC-hR-V7o" userLabel="RightTop">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="t3g-gq-TRV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vIT-wB-U0T" userLabel="RightBottom">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="OZ5-gp-9gT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EQE-4D-jJe" userLabel="BottomRight">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="bmg-S2-VJ7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r2h-FH-804" userLabel="BottomLeft">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="GgB-3Z-c7H"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FSb-Lg-GpW" userLabel="LeftBottom">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="CTi-37-Mag"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Oi5-E3-bOF" userLabel="LeftTop">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="Qnp-pc-dpM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qct-GO-bLb" userLabel="TopLeft">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="niC-ge-QTh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="O8p-YQ-hZI" userLabel="TopRight">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="xhe-Ij-e88"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="op5-cx-kl8" userLabel="MiddleTopLeft">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="rSj-Jz-13o"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="N38-6A-Ufd" userLabel="MiddleTopRight">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="jHG-CH-WYk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LHJ-8G-zEO" userLabel="MiddleBottomLeft">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="yTk-eS-J42"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XKl-Jk-IKp" userLabel="MiddleBottomRight">
+                    <connections>
+                        <action selector="didTapRoadConstruct:" destination="BYZ-38-t0r" id="GJw-yr-IC6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ciz-X9-dG8" userLabel="SignBottomRight">
+                    <connections>
+                        <action selector="didTapRoadSign:" destination="BYZ-38-t0r" id="rne-uF-WTR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="jyS-9b-EIJ" userLabel="SignBottomLeft">
+                    <connections>
+                        <action selector="didTapRoadSign:" destination="BYZ-38-t0r" id="HLp-rf-yqH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RV5-vu-8N3" userLabel="SignTopLeft">
+                    <connections>
+                        <action selector="didTapRoadSign:" destination="BYZ-38-t0r" id="DaL-KA-UuJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="116-ur-GBP" userLabel="SignTopRight">
+                    <connections>
+                        <action selector="didTapRoadSign:" destination="BYZ-38-t0r" id="nTy-Ox-uK6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rfw-LY-cqE" userLabel="solve">
+                    <connections>
+                        <action selector="solveIntersection:" destination="BYZ-38-t0r" id="7qr-ni-Li8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="104.7976011994003"/>
+            <point key="canvasLocation" x="136.23188405797103" y="104.34782608695653"/>
         </scene>
     </scenes>
-    <resources>
-        <namedColor name="Intrinsically White">
-            <color red="0.97299999000000004" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
