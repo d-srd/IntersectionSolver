@@ -32,7 +32,11 @@ class RoadView: UIView {
     var laneWidth: CGFloat = 10
     
     @IBInspectable
-    var arrowOffset: CGSize = CGSize(width: 0, height: 20)
+    var arrowOffset: CGSize = CGSize(width: 0, height: 20) {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     @IBInspectable
     var arrowRotation: CGFloat = 0

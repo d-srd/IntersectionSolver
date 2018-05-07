@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ddi-UQ-KBW">
-                                <rect key="frame" x="0.0" y="86" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-Nr-3F9" userLabel="RoadSegmentTopLeftToMiddleTopLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
@@ -49,7 +49,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-dr-fcZ" userLabel="RoadSegmentTopLeftToBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="137" y="-1" width="70" height="651"/>
+                                        <rect key="frame" x="137" y="-1" width="70" height="717"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-hf-XvX">
@@ -58,7 +58,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXp-Xa-DzP"/>
+                                                    <action selector="didTapCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXp-Xa-DzP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -99,7 +99,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cv6-ie-nxk" userLabel="RoadSegmentBottomRightToTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="209" y="0.0" width="70" height="656"/>
+                                        <rect key="frame" x="209" y="0.0" width="70" height="716"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIh-cw-BJ2">
@@ -108,7 +108,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdk-FL-e9e"/>
+                                                    <action selector="didTapCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdk-FL-e9e"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -158,7 +158,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsR-vq-7V0"/>
+                                                    <action selector="didTapCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsR-vq-7V0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -208,7 +208,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="pressedCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWg-tD-cwG"/>
+                                                    <action selector="didTapCarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWg-tD-cwG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -222,17 +222,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-dg-xcY" userLabel="BottomRight">
-                                        <rect key="frame" x="222" y="580" width="44" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="EQE-4D-jJe" appends="YES" id="EfM-1Y-Zak"/>
-                                        </connections>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-QX-Vqc" userLabel="BottomLeft">
-                                        <rect key="frame" x="155" y="581" width="44" height="44"/>
+                                        <rect key="frame" x="155" y="666" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -393,7 +384,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-mg-0XS" customClass="TrafficLightView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="3" y="447" width="72" height="203"/>
+                                        <rect key="frame" x="0.0" y="513" width="72" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <gestureRecognizers/>
@@ -407,6 +398,15 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Rfw-LY-cqE" appends="YES" id="MNX-PI-xdd"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-dg-xcY" userLabel="BottomRight">
+                                        <rect key="frame" x="223" y="666" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="EQE-4D-jJe" appends="YES" id="EfM-1Y-Zak"/>
                                         </connections>
                                     </view>
                                 </subviews>
@@ -424,7 +424,6 @@
                         <outlet property="bottomRightGestureContainer" destination="Dey-dg-xcY" id="G3r-hN-KRA"/>
                         <outlet property="bottomRightRoadSign" destination="6P9-3V-STL" id="Qpq-2s-vBZ"/>
                         <outlet property="bottomRightTap" destination="EQE-4D-jJe" id="uwk-Sj-H9p"/>
-                        <outlet property="grassView" destination="Ddi-UQ-KBW" id="7cD-7U-JiB"/>
                         <outlet property="leftBottomGestureContainer" destination="saN-AX-SgA" id="NoP-re-t8u"/>
                         <outlet property="leftBottomTap" destination="FSb-Lg-GpW" id="69s-pS-zVY"/>
                         <outlet property="leftCarButton" destination="d4H-Br-OpY" id="u72-wE-v5s"/>
