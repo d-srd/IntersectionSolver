@@ -3,7 +3,7 @@ iOS app to create and solve the order of vehicles through an intersection
 
 
 ## Demo
-![Application demo gif](https://thumbs.gfycat.com/WaterySlushyAnnashummingbird-max-14mb.gif)
+![Application demo gif](https://thumbs.gfycat.com/WaterySlushyAnnashummingbird-size_restricted.gif)
 
 
 ## Details
