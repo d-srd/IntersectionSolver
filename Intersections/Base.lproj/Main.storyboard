@@ -22,32 +22,6 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-Nr-3F9" userLabel="RoadSegmentTopLeftToMiddleTopLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="137" y="0.0" width="70" height="326"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="3.1415899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cM-yd-8XH" userLabel="RoadSegmentTopLeftToMiddleBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="138" y="-1" width="70" height="384"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="3.1415899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-dr-fcZ" userLabel="RoadSegmentTopLeftToBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
                                         <rect key="frame" x="137" y="-1" width="70" height="717"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,32 +43,6 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
                                                 <size key="value" width="0.0" height="120"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="how-Dd-bn3" userLabel="RoadSegmentBottomRightToMiddleBottomRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="208" y="326" width="70" height="332"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J79-Ub-cL3" userLabel="RoadSegmentBottomRightToMiddleTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="209" y="268" width="70" height="387"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -122,32 +70,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJK-6i-kzD" userLabel="RoadSegmentRightTopToMiddleTopRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="209" y="268" width="205" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="-1.5707899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-4O-I4V" userLabel="RoadSegmentRightTopToMiddleTopLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="138" y="268" width="274" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="-1.5707899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="50" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-4d-XOo" userLabel="RoadSegmentRightTopToLeftTop" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="268" width="414" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,32 +91,6 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
                                                 <size key="value" width="-100" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EnX-xF-kaM" userLabel="RoadSegmentLeftBottomToMiddleBottomLeft" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="326" width="208" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="1.5707899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="0.0" height="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GaT-hw-Mdr" userLabel="RoadSegmentLeftBottomToMiddleBottomRight" customClass="RoadView" customModule="Intersections" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="324" width="278" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="arrowRotation">
-                                                <real key="value" value="1.5707899999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="arrowOffset">
-                                                <size key="value" width="-20" height="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -442,20 +338,12 @@
                         <outlet property="rightCarButton" destination="5Ox-WT-Cix" id="q4D-x8-2jA"/>
                         <outlet property="rightTopGestureContainer" destination="lZT-Hf-gtb" id="Kmz-Y3-bPw"/>
                         <outlet property="rightTopTap" destination="TSC-hR-V7o" id="HfR-c9-HA5"/>
-                        <outlet property="roadSegmentBottomRightToMiddleBottomRight" destination="how-Dd-bn3" id="dTx-2d-7Kp"/>
-                        <outlet property="roadSegmentBottomRightToMiddleTopRight" destination="J79-Ub-cL3" id="zYy-iR-NSu"/>
                         <outlet property="roadSegmentBottomRightToTopRight" destination="Cv6-ie-nxk" id="VRw-tq-9Qk"/>
-                        <outlet property="roadSegmentLeftBottomToMiddleBottomLeft" destination="EnX-xF-kaM" id="QlP-tL-9AR"/>
-                        <outlet property="roadSegmentLeftBottomToMiddleBottomRight" destination="GaT-hw-Mdr" id="mff-FY-gfB"/>
                         <outlet property="roadSegmentLeftBottomToRightBottom" destination="le2-yq-n25" id="ofx-Mg-RAb"/>
                         <outlet property="roadSegmentMiddleBottomLeftToBottomLeft" destination="oyL-OJ-1zX" id="4qK-s7-zpd"/>
                         <outlet property="roadSegmentMiddleTopRightToTopRight" destination="fEl-xz-lCs" id="3zT-5m-1M7"/>
                         <outlet property="roadSegmentRightTopToLeftTop" destination="aGj-4d-XOo" id="W4x-vF-5NT"/>
-                        <outlet property="roadSegmentRightTopToMiddleTopLeft" destination="BeL-4O-I4V" id="5Zf-hP-M1w"/>
-                        <outlet property="roadSegmentRightTopToMiddleTopRight" destination="RJK-6i-kzD" id="M9h-GN-KVJ"/>
                         <outlet property="roadSegmentTopLeftToBottomLeft" destination="Hqr-dr-fcZ" id="Vjd-E3-Xyg"/>
-                        <outlet property="roadSegmentTopLeftToMiddleBottomLeft" destination="8cM-yd-8XH" id="bFz-ra-DZr"/>
-                        <outlet property="roadSegmentTopLeftToMiddleTopLeft" destination="6L1-Nr-3F9" id="EtS-Zn-Hkg"/>
                         <outlet property="topCarButton" destination="Lgz-hf-XvX" id="ef5-L0-nyy"/>
                         <outlet property="topLeftGestureContainer" destination="mmH-ME-EhZ" id="v4b-pc-KQc"/>
                         <outlet property="topLeftRoadSign" destination="aHX-eh-LM2" id="tmv-2o-r50"/>

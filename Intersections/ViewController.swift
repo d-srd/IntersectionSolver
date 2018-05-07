@@ -58,21 +58,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var middleTopLeftGestureContainer: UIView!
     @IBOutlet weak var middleTopRightGestureContainer: UIView!
     
-    // I didn't want to deal with changing constraints/frames of views, so I just made a bunch of roadSegments
-    @IBOutlet weak var roadSegmentTopLeftToMiddleTopLeft: RoadView!
-    @IBOutlet weak var roadSegmentTopLeftToMiddleBottomLeft: RoadView!
     @IBOutlet weak var roadSegmentTopLeftToBottomLeft: RoadView!
-    
-    @IBOutlet weak var roadSegmentBottomRightToMiddleBottomRight: RoadView!
-    @IBOutlet weak var roadSegmentBottomRightToMiddleTopRight: RoadView!
     @IBOutlet weak var roadSegmentBottomRightToTopRight: RoadView!
-    
-    @IBOutlet weak var roadSegmentRightTopToMiddleTopRight: RoadView!
-    @IBOutlet weak var roadSegmentRightTopToMiddleTopLeft: RoadView!
     @IBOutlet weak var roadSegmentRightTopToLeftTop: RoadView!
-    
-    @IBOutlet weak var roadSegmentLeftBottomToMiddleBottomLeft: RoadView!
-    @IBOutlet weak var roadSegmentLeftBottomToMiddleBottomRight: RoadView!
     @IBOutlet weak var roadSegmentLeftBottomToRightBottom: RoadView!
     
     @IBOutlet weak var roadSegmentMiddleBottomLeftToBottomLeft: RoadView!
